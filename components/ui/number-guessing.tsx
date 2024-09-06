@@ -88,8 +88,8 @@ export default function NumberGuessing(): JSX.Element {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-br from-green-500 to-yellow-600">
-          <div className="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-md bg-gradient-to-br from-green-200 to-yellow-300">
+        <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-br from-green-300 to-yellow-300">
+          <div className="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-md bg-gradient-to-br from-green-200 to-yellow-200">
             <h1 className="text-3xl font-bold text-center mb-2 text-black">
               Number Guessing Game
             </h1>
