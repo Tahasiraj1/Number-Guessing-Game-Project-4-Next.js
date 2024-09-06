@@ -12,14 +12,14 @@ type confettiProps = {
 const confettiColors = ['#A2D9A3', '#1D8348', '#F9E79F', '#F4D03F', '#FFFFFF', '#F1C40F'];
 // const confettiColors = ['#2C3E50', '#34495E', '#8E44AD', '#D35400', '#C0392B', '#7F8C8D', '#16A085'];
 
-interface NumberGuessingState {
-    gameStarted: boolean;
-    gameOver: boolean;
-    paused: boolean;
-    targetNumber: number;
-    userGuess: number | string;
-    attempts: number;
-}
+// interface NumberGuessingState {
+//     gameStarted: boolean;
+//     gameOver: boolean;
+//     paused: boolean;
+//     targetNumber: number;
+//     userGuess: number | string;
+//     attempts: number;
+// }
 
 export default function NumberGuessing(): JSX.Element {
     const [gameStarted, setGameStarted] = useState<boolean>(false);
@@ -43,7 +43,7 @@ export default function NumberGuessing(): JSX.Element {
 
     useEffect(() => {
         if (gameStarted && !paused) {
-            const randomNumber: number = 1;
+            const randomNumber: number = Math.floor(Math.random() * 10) + 1;
             setTargetNumber(randomNumber);
         }
     }, [gameStarted, paused]);
